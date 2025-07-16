@@ -8,7 +8,7 @@ This project demonstrates deploying Highly Available, Scalable and Resilient 204
 
 <img width="1145" height="709" alt="Screenshot 2025-07-16 at 8 06 22 PM" src="https://github.com/user-attachments/assets/2388086d-9857-43b1-bbb3-0ded04e730da" />
 
-
+-------------------
 ## Project Highlights:
 1. Containerization:
    * Containerized the 2048 application using docker to ensure consistent runtime environment
@@ -34,6 +34,7 @@ This project demonstrates deploying Highly Available, Scalable and Resilient 204
 8. VPC:
    * Created the Virtual network space from scratch to create the eks cluster in secure environment
 
+---------------
 ### Understanding EKS Cluster:
 * Control plane : Managed by AWS, including the components such as API Server, etcd, cloud controller manager, scheduler.
 * Woker Nodes: It is handled ny us for creating the node group such as EC2 instances or serverless compute as fargate to run the application.
@@ -41,7 +42,8 @@ This project demonstrates deploying Highly Available, Scalable and Resilient 204
 * Networking: Configured the secure communication between control plane and worker nodes
 * Monitoring and Logging : Integrated cloudwatch for the realtime performance and health tracking
 
-### Components created for the application:
+-------------------
+### Resources created for the application:
 1. Deployment : It contains the pod configuration such as app docker image and replica set configuration
 2. Service : It is used for exposing the apps to external world and perform service discovery using labels and selectors
 3. Ingress Resource : It contains the configuration for routing the external traffic to service which inturns reaches the containerized app running in pod
